@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Record</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Form Container */
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        /* Form Heading */
+        form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: rgb(0, 128, 192);
+        }
+
+        /* Input Fields */
+        form input[type="text"],
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form input[type="text"] {
+            font-size: 1rem;
+        }
+
+        form input[type="submit"] {
+            background: #ff6b6b;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background: rgb(128, 128, 255);
+        }
+
+        /* Link Back to Home */
+        a {
+            text-decoration: none;
+            color: #ff6b6b;
+            font-size: 1rem;
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            form {
+                padding: 20px;
+            }
+
+            form h1 {
+                font-size: 1.5rem;
+            }
+
+            form input[type="text"],
+            form input[type="submit"] {
+                font-size: 0.9rem;
+            }
+
+            a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="deleteservlet" method="post">
+        <h1>Delete Record</h1>
+        <label for="ename">Employee Name:</label>
+        <input type="text" id="ename" name="ename" placeholder="Enter the employee name" required><br>
+        <input type="submit" value="Submit">
+        <a href="index.html">Back to Home</a>
+    </form>
+</body>
+</html>

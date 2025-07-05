@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Employee Record</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        /* Form Container */
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        form h1 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #ffe7c9;
+        }
+
+        /* Input Fields */
+        form input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            background: #fff;
+            color: #333;
+        }
+
+        /* Submit Button */
+        form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 20px 0;
+            background: #27ae60;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background: #1e8449;
+        }
+
+        /* Back to Home Link */
+        form a {
+            text-decoration: none;
+            color: #ffe7c9;
+            font-size: 1rem;
+            margin-top: 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        form a:hover {
+            color: #dcdde1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            form {
+                padding: 20px;
+            }
+
+            form h1 {
+                font-size: 1.5rem;
+            }
+
+            form input[type="submit"] {
+                font-size: 0.9rem;
+            }
+
+            form a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="findservlet" method="post">
+        <h1>Find Employee Record</h1>
+        <input type="text" name="ename" placeholder="Enter the employee name" required>
+        <input type="submit" value="Submit">
+        <a href="index.html">Back to Home</a>
+    </form>
+</body>
+</html>
