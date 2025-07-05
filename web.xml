@@ -1,0 +1,57 @@
+<web-app>
+
+<servlet>
+<servlet-name>Addservlet</servlet-name>
+<servlet-class>com.basic.AddServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Addservlet</servlet-name>
+<url-pattern>/addservlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>DeleteServlet</servlet-name>
+<servlet-class>com.basic.DeleteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteServlet</servlet-name>
+<url-pattern>/deleteservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>UpdateServlet </servlet-name>
+<servlet-class>com.basic.UpdateServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name> UpdateServlet </servlet-name>
+<url-pattern>/updateservlet </url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Findservlet</servlet-name>
+<servlet-class>com.basic.Findservlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Findservlet </servlet-name>
+<url-pattern>/findservlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>FindAllServlet</servlet-name>
+<servlet-class>com.basic.FindAllServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>FindAllServlet </servlet-name>
+<url-pattern>/FindAllServlet</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>
